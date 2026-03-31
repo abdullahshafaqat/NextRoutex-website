@@ -123,16 +123,15 @@ export function HomeConsultingSection() {
   return (
     <section ref={sectionRef} className="relative overflow-hidden bg-[#f3f3f3] py-20 sm:py-24 lg:py-28">
 
-      <div className="relative mx-auto grid w-full max-w-270 grid-cols-1 items-center gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:gap-16 lg:px-3">
+      <div className="site-container relative grid w-full grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-16">
         <div className="max-w-155">
           <p className="text-2xl font-bold uppercase tracking-wide">
-            <span className="text-[#f03254]">FEEL VALUED</span>
-            <span className="text-[#4343b8]"> &amp; REWARDED</span>
+            <span className="text-[#187d76]">FEEL VALUED</span>
+            <span className="text-[#187d76]"> &amp; REWARDED</span>
           </p>
 
           <h2 className="mt-5 text-5xl font-semibold leading-[1.16] text-[#0b1220] sm:text-6xl">
-            Finance Consulting for
-            <br />
+            Finance Consulting For
             Challenging Times
           </h2>
 
@@ -146,7 +145,7 @@ export function HomeConsultingSection() {
 
           <div className="mt-9 flex items-center gap-7">
             <div className="pr-7">
-              <p className="text-3xl font-semibold text-[#0f172a]">Richard Garrett</p>
+              <p className="text-3xl font-semibold text-[#0f172a]">Malik Suleman</p>
               <p className="mt-1 text-base font-medium text-[#4b5563]">CEO &amp; Founder</p>
             </div>
             <div className="h-16 w-px bg-[#d3d5db]" />

@@ -34,24 +34,7 @@ const slides: Slide[] = [
   },
 ];
 
-const navItems = ["Home", "Pages", "Projects", "Services", "Blog", "Contact"];
-
-function ChevronDownIcon() {
-  return (
-    <svg
-      aria-hidden="true"
-      viewBox="0 0 20 20"
-      className="mt-0.5 h-3.5 w-3.5"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M5 7.5L10 12.5L15 7.5" />
-    </svg>
-  );
-}
+const navItems = ["Home", "About Us", "Pricing & Plans", "Service", "Blogs", "Contacts"];
 
 export function HomeHero() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -69,7 +52,7 @@ export function HomeHero() {
   return (
     <section className="flex min-h-screen flex-col bg-[#f7f7f7]">
       <header className="relative z-20 bg-white">
-        <div className="mx-auto flex w-full max-w-270 items-center justify-between gap-8 px-4 py-4 sm:px-6 lg:px-3">
+        <div className="site-container flex w-full items-center justify-between gap-8 py-4">
           <Link href="/" className="relative block h-10 w-47.5">
             <Image
               src={fullLogo}
@@ -83,17 +66,8 @@ export function HomeHero() {
 
           <nav className="hidden items-center gap-7 text-[17px] font-semibold text-[#3a3a3a] lg:flex">
             {navItems.map((item) => (
-              <a
-                key={item}
-                href="#"
-                className="group inline-flex items-center gap-1.5 transition-colors hover:text-[#187d76]"
-              >
+              <a key={item} href="#" className="inline-flex items-center transition-colors hover:text-[#187d76]">
                 <span>{item}</span>
-                {item !== "Contact" ? (
-                  <span className="text-[#3a3a3a] transition-colors group-hover:text-[#187d76]">
-                    <ChevronDownIcon />
-                  </span>
-                ) : null}
               </a>
             ))}
           </nav>
@@ -131,8 +105,8 @@ export function HomeHero() {
           />
         </div>
 
-        <div className="relative z-10 mx-auto flex h-full w-full max-w-270 items-center px-4 py-14 sm:px-6 lg:px-3">
-          <div className="ml-auto w-full max-w-145 text-white">
+        <div className="site-container relative z-10 flex min-h-[calc(100vh-88px)] w-full items-center py-0">
+          <div className="w-full max-w-145 text-white">
             <p className="text-[18px] font-semibold tracking-wide text-white/90">{activeSlide.eyebrow}</p>
             <h1 className="mt-4 whitespace-pre-line text-[42px] font-semibold leading-[1.1] sm:text-[58px]">
               {activeSlide.title}

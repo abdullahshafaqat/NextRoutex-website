@@ -22,24 +22,15 @@ export function HomeInnovationSection() {
     <section className="relative overflow-hidden bg-[#1e2230]">
       <div className="grid grid-cols-1 lg:grid-cols-2">
         <div className="relative px-8 py-20 sm:px-16 sm:py-24 lg:px-20 lg:py-28">
-          <div className="pointer-events-none absolute left-0 top-0">
-            <svg width="200" height="400" viewBox="0 0 200 400" fill="none" aria-hidden="true">
-              <polygon points="0,0 120,0 0,180" fill="#7c3aed" />
-              <polygon points="0,120 100,120 0,260" fill="#3b82f6" />
-              <polygon points="0,220 80,220 0,340" fill="#dc2626" />
-            </svg>
-          </div>
-
           <div className="relative z-10 ml-16 max-w-[520px]">
             <h2 className="text-4xl font-bold leading-[1.15] text-white sm:text-5xl lg:text-[52px]">
               Be at the forefront of the
-              <br />
-              new innovation
+              new inovation
             </h2>
 
             <div className="mt-12 space-y-10">
               {features.map((feature) => (
-                <div key={feature.title} className="border-l-[3px] border-[#dc2626] pl-6">
+                <div key={feature.title} className="border-l-[3px] border-[#187d76] pl-6">
                   <h3 className="text-xl font-bold text-white">{feature.title}</h3>
                   <p className="mt-3 text-[15px] leading-7 text-gray-400">{feature.description}</p>
                 </div>

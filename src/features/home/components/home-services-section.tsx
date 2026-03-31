@@ -29,7 +29,7 @@ type FeatureItem = {
 };
 
 const featureCopy =
-  "Prevailed always tolerably discourse and loser assurance creatively coin applauded more uncommonly. Him everything trouble";
+  "Prevailed always tolerably discourse and loser assurance creatively coin applauded more uncommonly. Him everything trouble settled. Lead supported projection and strategic planning through focused market insight and dependable advisory execution.";
 
 const serviceFeatureMap: Record<ServiceKey, FeatureItem[]> = {
   consulting: [
@@ -57,7 +57,7 @@ export function HomeServicesSection() {
   const featureItems = serviceFeatureMap[activeService];
 
   return (
-    <section className="relative overflow-hidden border-t border-[#ececec] bg-[#f3f3f3] py-16 sm:py-20 lg:py-24">
+    <section className="relative overflow-hidden bg-[#f3f3f3] py-16 sm:py-20 lg:py-24">
       <Image src={leftDecor} alt="" className="pointer-events-none absolute -left-1 top-0 h-auto w-64" />
 
       <div className="pointer-events-none absolute -right-2 top-6 opacity-55">
@@ -72,20 +72,17 @@ export function HomeServicesSection() {
         </svg>
       </div>
 
-      <div className="pointer-events-none absolute bottom-0 right-0 h-16 w-16 bg-[#f10606] [clip-path:polygon(100%_0,0_100%,100%_100%)]" />
-
-      <div className="relative mx-auto grid w-full max-w-270 grid-cols-1 gap-10 px-4 sm:px-6 lg:grid-cols-[380px_1fr] lg:items-start lg:gap-14 lg:px-3">
-        <div className="relative">
+      <div className="site-container relative grid w-full grid-cols-1 gap-10 lg:grid-cols-[380px_1fr] lg:items-stretch lg:gap-14">
+        <div className="relative h-full">
           <div className="absolute inset-x-4 -bottom-3 top-4 bg-[#e7e7e7]" />
-          <div className="relative bg-white px-6 py-7 shadow-[0_10px_30px_rgba(0,0,0,0.06)]">
-            <p className="text-xs font-bold uppercase tracking-wider text-[#3f58db]">WHAT WE DO</p>
+          <div className="relative flex h-full flex-col bg-white px-6 py-7 shadow-[0_10px_30px_rgba(0,0,0,0.06)]">
+            <p className="text-xs font-bold uppercase tracking-wider text-[#187d76]">WHAT WE DO</p>
             <h3 className="mt-4 text-[40px] font-semibold leading-[1.15] text-[#1a1f28]">
               Excellent service and
-              <br />
               support for you
             </h3>
 
-            <div className="mt-6 space-y-3">
+            <div className="mt-8 space-y-3">
               <button
                 type="button"
                 onClick={() => setActiveService("consulting")}
@@ -111,7 +108,7 @@ export function HomeServicesSection() {
                   aria-hidden="true"
                 />
                 <span
-                  className={`pointer-events-none absolute bottom-0 left-18 h-0 w-0 border-b-10 border-l-7 border-r-7 border-b-[#f10606] border-l-transparent border-r-transparent transition-all duration-300 ${
+                  className={`pointer-events-none absolute bottom-0 left-18 h-0 w-0 border-b-10 border-l-7 border-r-7 border-b-[#187d76] border-l-transparent border-r-transparent transition-all duration-300 ${
                     activeService === "consulting" ? "translate-y-0 opacity-100" : "translate-y-1 opacity-0"
                   }`}
                 />
@@ -146,7 +143,7 @@ export function HomeServicesSection() {
                   aria-hidden="true"
                 />
                 <span
-                  className={`pointer-events-none absolute bottom-0 left-18 h-0 w-0 border-b-10 border-l-7 border-r-7 border-b-[#f10606] border-l-transparent border-r-transparent transition-all duration-300 ${
+                  className={`pointer-events-none absolute bottom-0 left-18 h-0 w-0 border-b-10 border-l-7 border-r-7 border-b-[#187d76] border-l-transparent border-r-transparent transition-all duration-300 ${
                     activeService === "marketing" ? "translate-y-0 opacity-100" : "translate-y-1 opacity-0"
                   }`}
                 />
@@ -181,7 +178,7 @@ export function HomeServicesSection() {
                   aria-hidden="true"
                 />
                 <span
-                  className={`pointer-events-none absolute bottom-0 left-18 h-0 w-0 border-b-10 border-l-7 border-r-7 border-b-[#f10606] border-l-transparent border-r-transparent transition-all duration-300 ${
+                  className={`pointer-events-none absolute bottom-0 left-18 h-0 w-0 border-b-10 border-l-7 border-r-7 border-b-[#187d76] border-l-transparent border-r-transparent transition-all duration-300 ${
                     activeService === "banking" ? "translate-y-0 opacity-100" : "translate-y-1 opacity-0"
                   }`}
                 />
@@ -195,7 +192,7 @@ export function HomeServicesSection() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 gap-x-10 gap-y-9 pt-4 sm:grid-cols-2">
+        <div className="grid h-full grid-cols-1 gap-x-10 gap-y-9 sm:grid-cols-2">
           {featureItems.map((item) => {
             const Icon = item.icon;
 
