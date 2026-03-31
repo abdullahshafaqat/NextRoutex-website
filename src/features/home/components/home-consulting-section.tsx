@@ -3,9 +3,8 @@
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
-import sidePhoto from "@/assets/13.jpg";
-import decorGeom from "@/assets/17.webp";
-import decorGeom from "@/assets/4-removebg-preview.png";
+import sidePhoto from "@/assets/consulting-photo.webp";
+import decorGeom from "@/assets/consulting-decoration.png";
 import signature from "@/assets/signature.webp";
 
 const LOGO_GREEN = "#187d76";

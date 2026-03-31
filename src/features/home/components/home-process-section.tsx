@@ -2,12 +2,12 @@
 
 import Image from "next/image";
 
-import processImageOne from "@/assets/3.webp";
-import processImageTwo from "@/assets/6.webp";
-import processImageThree from "@/assets/5.webp";
-import processAccent from "@/assets/14.84d35d29.png";
-import rightDecor from "@/assets/11.png-removebg-preview.png";
-import hoverAnimation from "@/assets/14.84d35d29.png";
+import processImageOne from "@/assets/process-step-1.webp";
+import processImageTwo from "@/assets/process-step-2.webp";
+import processImageThree from "@/assets/process-step-3.webp";
+import processAccent from "@/assets/process-accent.png";
+import rightDecor from "@/assets/process-arrow.png";
+import hoverAnimation from "@/assets/process-accent.png";
 
 type ProcessStep = {
   id: string;
@@ -40,12 +40,6 @@ const processSteps: ProcessStep[] = [
 export function HomeProcessSection() {
   return (
     <section className="relative overflow-hidden bg-[#f3f3f3] py-16 sm:py-20 lg:py-24">
-      <div className="site-container relative w-full">
-        <div className="mx-auto max-w-[440px] text-center">
-          <p className="text-sm font-bold uppercase tracking-[0.14em] sm:text-[15px]">
-            <span className="text-[#187d76]">OUR</span>
-            <span className="text-[#187d76]"> PROCESS</span>
-    <section className="relative overflow-hidden border-t border-[#e8e8e8] bg-[#f3f3f3] py-16 sm:py-20 lg:py-24">
       <Image
         src={rightDecor}
         alt=""
@@ -54,10 +48,8 @@ export function HomeProcessSection() {
 
       <div className="relative mx-auto w-full max-w-[1080px] px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-[480px] text-center">
-          <p className="text-xs font-bold uppercase tracking-wide">
-            <span className="text-[#ec0000]">OUR</span>
-            <span className="text-[#3f58db]"> PROCESS</span>
-
+          <p className="text-sm font-bold uppercase tracking-[0.14em] text-[#187d76] sm:text-[15px]">
+            OUR PROCESS
           </p>
           <h3 className="mt-3 text-[34px] font-semibold leading-[1.12] text-[#151a24] sm:text-[42px]">
             Steps of Recruitment
@@ -78,7 +70,6 @@ export function HomeProcessSection() {
                   sizes="190px"
                   className="object-cover transition-transform duration-500 group-hover:scale-110"
                 />
-                {/* Hover animation overlay */}
                 <Image
                   src={hoverAnimation}
                   alt=""

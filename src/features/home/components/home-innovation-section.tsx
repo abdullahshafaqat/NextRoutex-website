@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 
-import mainImage from "@/assets/13.jpg";
+import mainImage from "@/assets/innovation-main.jpg";
 
 const features = [
   {

@@ -4,9 +4,9 @@ import Image, { type StaticImageData } from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-import slideOne from "@/assets/1.jpg";
-import slideTwo from "@/assets/6.jpg";
-import accentShape from "@/assets/4.png";
+import slideOne from "@/assets/hero-slide-1.png";
+import slideTwo from "@/assets/hero-slide-2.jpg";
+import accentShape from "@/assets/hero-accent.png";
 import fullLogo from "@/assets/full-logo.png";
 
 type Slide = {
