@@ -5,7 +5,6 @@ import { useEffect, useRef, useState } from "react";
 
 import sidePhoto from "@/assets/13.jpg";
 import decorGeom from "@/assets/17.webp";
-import signature from "@/assets/signature.webp";
 
 const LOGO_GREEN = "#187d76";
 
@@ -148,8 +147,6 @@ export function HomeConsultingSection() {
               <p className="text-3xl font-semibold text-[#0f172a]">Malik Suleman</p>
               <p className="mt-1 text-base font-medium text-[#4b5563]">CEO &amp; Founder</p>
             </div>
-            <div className="h-16 w-px bg-[#d3d5db]" />
-            <Image src={signature} alt="Signature" className="h-auto w-44" />
           </div>
         </div>
 

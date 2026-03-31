@@ -107,16 +107,6 @@ export function HomeServicesSection() {
                   className={activeService === "consulting" ? "text-white/70" : "text-[#9499a5]"}
                   aria-hidden="true"
                 />
-                <span
-                  className={`pointer-events-none absolute bottom-0 left-18 h-0 w-0 border-b-10 border-l-7 border-r-7 border-b-[#187d76] border-l-transparent border-r-transparent transition-all duration-300 ${
-                    activeService === "consulting" ? "translate-y-0 opacity-100" : "translate-y-1 opacity-0"
-                  }`}
-                />
-                <span
-                  className={`pointer-events-none absolute bottom-0 left-23 h-0 w-0 border-b-12 border-l-8 border-r-8 border-b-[#2f3440] border-l-transparent border-r-transparent transition-all delay-75 duration-300 ${
-                    activeService === "consulting" ? "translate-y-0 opacity-100" : "translate-y-1 opacity-0"
-                  }`}
-                />
               </button>
 
               <button
@@ -142,16 +132,6 @@ export function HomeServicesSection() {
                   className={activeService === "marketing" ? "text-white/70" : "text-[#9499a5]"}
                   aria-hidden="true"
                 />
-                <span
-                  className={`pointer-events-none absolute bottom-0 left-18 h-0 w-0 border-b-10 border-l-7 border-r-7 border-b-[#187d76] border-l-transparent border-r-transparent transition-all duration-300 ${
-                    activeService === "marketing" ? "translate-y-0 opacity-100" : "translate-y-1 opacity-0"
-                  }`}
-                />
-                <span
-                  className={`pointer-events-none absolute bottom-0 left-23 h-0 w-0 border-b-12 border-l-8 border-r-8 border-b-[#2f3440] border-l-transparent border-r-transparent transition-all delay-75 duration-300 ${
-                    activeService === "marketing" ? "translate-y-0 opacity-100" : "translate-y-1 opacity-0"
-                  }`}
-                />
               </button>
 
               <button
@@ -176,16 +156,6 @@ export function HomeServicesSection() {
                   size={16}
                   className={activeService === "banking" ? "text-white/70" : "text-[#9499a5]"}
                   aria-hidden="true"
-                />
-                <span
-                  className={`pointer-events-none absolute bottom-0 left-18 h-0 w-0 border-b-10 border-l-7 border-r-7 border-b-[#187d76] border-l-transparent border-r-transparent transition-all duration-300 ${
-                    activeService === "banking" ? "translate-y-0 opacity-100" : "translate-y-1 opacity-0"
-                  }`}
-                />
-                <span
-                  className={`pointer-events-none absolute bottom-0 left-23 h-0 w-0 border-b-12 border-l-8 border-r-8 border-b-[#2f3440] border-l-transparent border-r-transparent transition-all delay-75 duration-300 ${
-                    activeService === "banking" ? "translate-y-0 opacity-100" : "translate-y-1 opacity-0"
-                  }`}
                 />
               </button>
             </div>
