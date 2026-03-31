@@ -3,7 +3,7 @@
 import Image from "next/image";
 
 import fan from "@/assets/fan.png";
-import footerBg from "@/assets/footer.jpg";
+import footerBg from "@/assets/footer.png";
 import logo from "@/assets/logo.png";
 
 function FacebookIcon() {
@@ -41,7 +41,7 @@ function LinkedInIcon() {
 export function HomeFooter() {
   return (
     <footer className="relative bg-[#1a1d29] overflow-hidden">
-      <div className="absolute -top-10 -right-10 w-64 h-64 opacity-30">
+      <div className="absolute -top-12 -right-12 w-[400px] h-[400px] opacity-150">
         <Image
           src={footerBg}
           alt=""
@@ -50,7 +50,7 @@ export function HomeFooter() {
         />
       </div>
       
-      <div className="absolute bottom-4 left-4 w-16 h-16 opacity-40">
+      <div className="absolute bottom-24 left-4 w-10 h-10 opacity-40" style={{ animation: 'spin 8s linear infinite' }}>
         <Image
           src={fan}
           alt=""
@@ -72,14 +72,14 @@ export function HomeFooter() {
                 />
               </div>
             </div>
-            <p className="mt-4 text-base leading-relaxed text-gray-400">
+            <p className="mt-4 text-lg leading-relaxed text-gray-400 font-medium">
               Excellence decisively nay man twins impression maximum contrasted remarkably is perfect.
             </p>
             <div className="mt-6">
-              <h4 className="text-base font-bold uppercase tracking-wide text-white">
+              <h4 className="text-lg font-bold uppercase tracking-wide text-white">
                 OPENING HOURS
               </h4>
-              <div className="mt-4 space-y-2 text-base text-gray-400">
+              <div className="mt-4 space-y-2 text-lg text-gray-400 font-medium">
                 <div className="flex items-center justify-between">
                   <span>Monday - Sunday:</span>
                   <span className="flex-1 border-b border-gray-600 mx-2" />
@@ -95,30 +95,30 @@ export function HomeFooter() {
           </div>
 
           <div>
-            <h4 className="text-xl font-semibold text-white">Our Company</h4>
+            <h4 className="text-2xl font-bold text-white">Our Company</h4>
             <ul className="mt-6 space-y-3">
               <li>
-                <a href="#" className="text-base text-gray-400 hover:text-white transition-colors">
+                <a href="#" className="text-lg text-gray-400 hover:text-white transition-colors font-medium">
                   Company Profile
                 </a>
               </li>
               <li>
-                <a href="#" className="text-base text-gray-400 hover:text-white transition-colors">
+                <a href="#" className="text-lg text-gray-400 hover:text-white transition-colors font-medium">
                   Help Center
                 </a>
               </li>
               <li>
-                <a href="#" className="text-base text-gray-400 hover:text-white transition-colors">
+                <a href="#" className="text-lg text-gray-400 hover:text-white transition-colors font-medium">
                   Career
                 </a>
               </li>
               <li>
-                <a href="#" className="text-base text-gray-400 hover:text-white transition-colors">
+                <a href="#" className="text-lg text-gray-400 hover:text-white transition-colors font-medium">
                   Plans & Pricing
                 </a>
               </li>
               <li>
-                <a href="#" className="text-base text-gray-400 hover:text-white transition-colors">
+                <a href="#" className="text-lg text-gray-400 hover:text-white transition-colors font-medium">
                   Contact
                 </a>
               </li>
@@ -126,30 +126,30 @@ export function HomeFooter() {
           </div>
 
           <div>
-            <h4 className="text-xl font-semibold text-white">Our Services</h4>
+            <h4 className="text-2xl font-bold text-white">Our Services</h4>
             <ul className="mt-6 space-y-3">
               <li>
-                <a href="#" className="text-base text-gray-400 hover:text-white transition-colors">
+                <a href="#" className="text-lg text-gray-400 hover:text-white transition-colors font-medium">
                   Manage investment
                 </a>
               </li>
               <li>
-                <a href="#" className="text-base text-gray-400 hover:text-white transition-colors">
+                <a href="#" className="text-lg text-gray-400 hover:text-white transition-colors font-medium">
                   Business planning
                 </a>
               </li>
               <li>
-                <a href="#" className="text-base text-gray-400 hover:text-white transition-colors">
+                <a href="#" className="text-lg text-gray-400 hover:text-white transition-colors font-medium">
                   Financial advices
                 </a>
               </li>
               <li>
-                <a href="#" className="text-base text-gray-400 hover:text-white transition-colors">
+                <a href="#" className="text-lg text-gray-400 hover:text-white transition-colors font-medium">
                   Tax strategy
                 </a>
               </li>
               <li>
-                <a href="#" className="text-base text-gray-400 hover:text-white transition-colors">
+                <a href="#" className="text-lg text-gray-400 hover:text-white transition-colors font-medium">
                   Insurance strategy
                 </a>
               </li>
@@ -157,17 +157,17 @@ export function HomeFooter() {
           </div>
 
           <div>
-            <h4 className="text-xl font-semibold text-white">Newsletter</h4>
-            <p className="mt-4 text-base text-gray-400">
+            <h4 className="text-2xl font-bold text-white">Newsletter</h4>
+            <p className="mt-4 text-lg text-gray-400 font-medium">
               Join our subscribers list to get the latest news and special offers.
             </p>
             <div className="mt-6 flex">
               <input
                 type="email"
                 placeholder="Your Email"
-                className="flex-1 bg-transparent border border-gray-600 px-4 py-3 text-base text-white placeholder-gray-500 focus:outline-none focus:border-[#0d7377]"
+                className="flex-1 bg-transparent border border-gray-600 px-4 py-3 text-lg text-white placeholder-gray-500 focus:outline-none focus:border-[#0d7377] font-medium"
               />
-              <button className="bg-[#0d7377] px-6 py-3 text-base font-semibold text-white hover:bg-[#0a5c5e] transition-colors">
+              <button className="bg-[#0d7377] px-6 py-3 text-lg font-bold text-white hover:bg-[#0a5c5e] transition-colors">
                 SUBSCRIBE
               </button>
             </div>
