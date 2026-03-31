@@ -91,9 +91,8 @@ export function HomeTeamSection() {
 
       <div className="relative mx-auto w-full max-w-[1200px] px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-[480px] text-center">
-          <p className="text-sm font-bold uppercase tracking-wide">
-            <span className="text-[#e63946]">TEAM</span>
-            <span className="text-[#3b82f6]"> MEMBERS</span>
+          <p className="text-sm font-bold uppercase tracking-wide text-[#0d7377]">
+            TEAM MEMBERS
           </p>
           <h2 className="mt-3 text-3xl font-bold text-[#1a1a2e] sm:text-4xl lg:text-[42px]">
             Meet our experts
@@ -112,7 +111,7 @@ export function HomeTeamSection() {
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                   className="object-cover"
                 />
-                <div className="absolute bottom-0 left-0 right-0 flex items-center justify-center gap-4 bg-[#e63946] py-3 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                <div className="absolute bottom-0 left-0 right-0 flex items-center justify-center gap-4 bg-[#0d7377] py-3 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                   <a href="#" className="text-white hover:text-white/80">
                     <FacebookIcon />
                   </a>

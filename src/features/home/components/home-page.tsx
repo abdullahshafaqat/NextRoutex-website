@@ -1,6 +1,7 @@
 import { HomeHero } from "@/features/home/components/home-hero";
 import { HomeConsultingSection } from "@/features/home/components/home-consulting-section";
 import { HomeCtaSection } from "@/features/home/components/home-cta-section";
+import { HomeFooter } from "@/features/home/components/home-footer";
 import { HomeInnovationSection } from "@/features/home/components/home-innovation-section";
 import { HomePartnersSection } from "@/features/home/components/home-partners-section";
 import { HomeProcessSection } from "@/features/home/components/home-process-section";
@@ -22,6 +23,7 @@ export function HomePage() {
       <HomeProjectsSection />
       <HomeCtaSection />
       <HomeTestimonialSection />
+      <HomeFooter />
     </>
   );
 }

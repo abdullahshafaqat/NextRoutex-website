@@ -43,7 +43,7 @@ export function HomeProcessSection() {
       <Image
         src={rightDecor}
         alt=""
-        className="pointer-events-none absolute right-0 top-1/2 h-auto w-96 -translate-y-1/2 object-contain"
+        className="pointer-events-none absolute right-0 top-1/2 h-auto w-72 -translate-y-1/2 object-contain"
       />
 
       <div className="relative mx-auto w-full max-w-[1080px] px-4 sm:px-6 lg:px-8">

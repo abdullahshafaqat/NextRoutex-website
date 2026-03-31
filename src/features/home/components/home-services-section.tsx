@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import leftDecor from "@/assets/services-decoration.png";
 import {
   BarChart3,
   Briefcase,
@@ -16,7 +17,7 @@ import {
   Store,
 } from "lucide-react";
 
-import leftDecor from "@/assets/services-decoration.png";
+
 
 const LOGO_GREEN = "#187d76";
 
@@ -57,26 +58,14 @@ export function HomeServicesSection() {
   const featureItems = serviceFeatureMap[activeService];
 
   return (
-    <section className="relative overflow-hidden bg-[#f3f3f3] py-16 sm:py-20 lg:py-24">
-      <Image src={leftDecor} alt="" className="pointer-events-none absolute -left-1 top-0 h-auto w-64" />
+    <section className="relative bg-[#f3f3f3] py-16 sm:py-20 lg:py-24">
+      <Image src={leftDecor} alt="" className="pointer-events-none absolute -left-1 -top-24 h-auto w-48" />
 
-      <div className="pointer-events-none absolute -right-2 top-6 opacity-55">
-        <svg width="500" height="290" viewBox="0 0 500 290" fill="none" aria-hidden="true">
-          <path d="M60 18C165 18 168 84 272 84H500" stroke="#c9cbe0" strokeWidth="1" />
-          <path d="M40 44C145 44 148 110 252 110H500" stroke="#c9cbe0" strokeWidth="1" />
-          <path d="M22 70C127 70 130 136 234 136H500" stroke="#c9cbe0" strokeWidth="1" />
-          <path d="M10 96C115 96 118 162 222 162H500" stroke="#c9cbe0" strokeWidth="1" />
-          <path d="M4 122C109 122 112 188 216 188H500" stroke="#c9cbe0" strokeWidth="1" />
-          <path d="M2 148C107 148 110 214 214 214H500" stroke="#c9cbe0" strokeWidth="1" />
-          <path d="M0 174C105 174 108 240 212 240H500" stroke="#c9cbe0" strokeWidth="1" />
-        </svg>
-      </div>
-
-      <div className="site-container relative grid w-full grid-cols-1 gap-10 lg:grid-cols-[380px_1fr] lg:items-stretch lg:gap-14">
+      <div className="site-container relative ml-10 grid w-full grid-cols-1 gap-10 lg:grid-cols-[450px_1fr] lg:items-stretch lg:gap-10">
         <div className="relative h-full">
-          <div className="absolute inset-x-4 -bottom-3 top-4 bg-[#e7e7e7]" />
-          <div className="relative flex h-full flex-col bg-white px-6 py-7 shadow-[0_10px_30px_rgba(0,0,0,0.06)]">
-            <p className="text-xs font-bold uppercase tracking-wider text-[#187d76]">WHAT WE DO</p>
+          <div className="absolute inset-x-4 -bottom-3 top-4 rounded-2xl bg-[#e7e7e7]" />
+          <div className="relative flex h-full flex-col rounded-xl bg-white px-6 py-7 shadow-[0_10px_30px_rgba(0,0,0,0.06)]">
+            <p className="text-2xl font-bold uppercase tracking-wider text-[#187d76]">WHAT WE DO</p>
             <h3 className="mt-4 text-[40px] font-semibold leading-[1.15] text-[#1a1f28]">
               Excellent service and
               support for you
@@ -162,15 +151,15 @@ export function HomeServicesSection() {
           </div>
         </div>
 
-        <div className="grid h-full grid-cols-1 gap-x-10 gap-y-9 sm:grid-cols-2">
+        <div className="grid h-full grid-cols-1 gap-x-12 gap-y-8 sm:grid-cols-2">
           {featureItems.map((item) => {
             const Icon = item.icon;
 
             return (
               <article key={item.title}>
-                <Icon size={46} color={LOGO_GREEN} strokeWidth={2} aria-hidden={true} />
-                <h4 className="mt-4 text-[24px] font-semibold text-[#181d28]">{item.title}</h4>
-                <p className="mt-3 text-[15px] leading-7 text-[#5f6573]">{item.description}</p>
+                <Icon size={40} color={LOGO_GREEN} strokeWidth={1.5} aria-hidden={true} />
+                <h4 className="mt-4 text-[18px] font-semibold text-[#181d28]">{item.title}</h4>
+                <p className="mt-2 line-clamp-3 text-[13px] leading-5 text-[#5f6573]">{item.description}</p>
               </article>
             );
           })}

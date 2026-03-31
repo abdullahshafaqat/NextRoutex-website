@@ -57,9 +57,8 @@ export function HomeProjectsSection() {
         <div className="mx-auto w-full max-w-[1200px] px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-end">
             <div>
-              <p className="text-sm font-bold uppercase tracking-wide">
-                <span className="text-[#e63946]">POPULAR</span>
-                <span className="text-[#3b82f6]"> PROJECTS</span>
+              <p className="text-sm font-bold uppercase tracking-wide text-[#0d7377]">
+                POPULAR PROJECTS
               </p>
               <h2 className="mt-3 text-3xl font-bold text-white sm:text-4xl lg:text-[42px]">
                 Our most recent
@@ -71,7 +70,7 @@ export function HomeProjectsSection() {
             <div className="flex items-center gap-4">
               <button
                 onClick={goToPrevious}
-                className="flex h-10 w-10 items-center justify-center rounded-full bg-[#e63946] text-white transition-colors hover:bg-[#c92a37]"
+                className="flex h-10 w-10 items-center justify-center rounded-full bg-[#0d7377] text-white transition-colors hover:bg-[#0a5c5e]"
               >
                 <ChevronLeftIcon />
               </button>
@@ -80,7 +79,7 @@ export function HomeProjectsSection() {
               </span>
               <button
                 onClick={goToNext}
-                className="flex h-10 w-10 items-center justify-center rounded-full bg-[#e63946] text-white transition-colors hover:bg-[#c92a37]"
+                className="flex h-10 w-10 items-center justify-center rounded-full bg-[#0d7377] text-white transition-colors hover:bg-[#0a5c5e]"
               >
                 <ChevronRightIcon />
               </button>
@@ -102,10 +101,10 @@ export function HomeProjectsSection() {
           </div>
 
           <div className="relative bg-white p-8 shadow-lg sm:p-10 lg:p-12">
-            <p className="text-xs font-bold uppercase tracking-wider text-[#e63946]">
+            <p className="text-xs font-bold uppercase tracking-wider text-[#0d7377]">
               {currentProject.category}
             </p>
-            <h3 className="mt-3 text-2xl font-bold text-[#e63946] sm:text-3xl">
+            <h3 className="mt-3 text-2xl font-bold text-[#0d7377] sm:text-3xl">
               {currentProject.title}
             </h3>
             <p className="mt-4 text-sm leading-relaxed text-gray-500">
