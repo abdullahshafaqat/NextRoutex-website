@@ -16,7 +16,7 @@ import {
   Store,
 } from "lucide-react";
 
-import leftDecor from "@/assets/10.webp";
+import leftDecor from "@/assets/2-removebg-preview.png";
 
 const LOGO_GREEN = "#187d76";
 

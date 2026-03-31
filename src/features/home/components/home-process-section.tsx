@@ -6,6 +6,7 @@ import processImageOne from "@/assets/3.webp";
 import processImageTwo from "@/assets/6.webp";
 import processImageThree from "@/assets/5.webp";
 import processAccent from "@/assets/14.84d35d29.png";
+import rightDecor from "@/assets/11.png-removebg-preview.png";
 import hoverAnimation from "@/assets/14.84d35d29.png";
 
 type ProcessStep = {
@@ -44,6 +45,19 @@ export function HomeProcessSection() {
           <p className="text-sm font-bold uppercase tracking-[0.14em] sm:text-[15px]">
             <span className="text-[#187d76]">OUR</span>
             <span className="text-[#187d76]"> PROCESS</span>
+    <section className="relative overflow-hidden border-t border-[#e8e8e8] bg-[#f3f3f3] py-16 sm:py-20 lg:py-24">
+      <Image
+        src={rightDecor}
+        alt=""
+        className="pointer-events-none absolute right-0 top-1/2 h-auto w-96 -translate-y-1/2 object-contain"
+      />
+
+      <div className="relative mx-auto w-full max-w-[1080px] px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-[480px] text-center">
+          <p className="text-xs font-bold uppercase tracking-wide">
+            <span className="text-[#ec0000]">OUR</span>
+            <span className="text-[#3f58db]"> PROCESS</span>
+
           </p>
           <h3 className="mt-3 text-[34px] font-semibold leading-[1.12] text-[#151a24] sm:text-[42px]">
             Steps of Recruitment
