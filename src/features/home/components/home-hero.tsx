@@ -65,7 +65,7 @@ export function HomeHero() {
 
         <div className="absolute inset-0 bg-[#0e1724]/55" />
 
-        <div className="pointer-events-none absolute inset-y-0 right-0 w-full max-w-225">
+        <div className="pointer-events-none absolute inset-y-0 right-0 w-full max-w-225 opacity-14">
           <Image
             src={accentShape}
             alt="Decorative shape"

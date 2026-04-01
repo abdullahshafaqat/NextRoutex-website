@@ -12,48 +12,8 @@ import { ContactHero } from "./contact-hero";
 function ContactSection() {
   return (
     <section className="bg-white py-16 font-sans sm:py-20 lg:py-24">
-      <div className="mx-auto w-full max-w-[1200px] px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 gap-12 lg:grid-cols-2">
-          <div>
-            <h2 className="text-3xl font-bold text-[#1a1d29]">Contact Information</h2>
-            <p className="mt-4 text-sm leading-relaxed text-gray-500">
-              Plan upon yet way get cold spot its week. Almost do am or limits hearts. Resolve parties but why she shewing.
-            </p>
-
-            <div className="mt-8 space-y-6">
-              <div className="flex items-start gap-4">
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#0d7377]">
-                  <Phone size={20} className="text-white" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-[#1a1d29]">Hotline</h3>
-                  <p className="text-sm text-gray-500">+4733378901</p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4">
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#0d7377]">
-                  <MapPin size={20} className="text-white" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-[#1a1d29]">Our Location</h3>
-                  <p className="text-sm text-gray-500">55 Main Street, The Grand Avenue 2nd Block,<br />New York City</p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4">
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#1a1d29]">
-                  <Mail size={20} className="text-white" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-[#1a1d29]">Official Email</h3>
-                  <p className="text-sm text-gray-500">info@egrul.com</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="relative">
+      <div className="mx-auto w-full max-w-[800px] px-4 sm:px-6 lg:px-8">
+        <div className="relative">
             <div className="rounded-2xl bg-white p-8 shadow-xl">
               <p className="text-xs font-bold uppercase tracking-wide text-[#0d7377]">HAVE QUESTIONS?</p>
               <h3 className="mt-2 text-2xl font-bold text-[#1a1d29]">Send us a Message</h3>
@@ -92,17 +52,16 @@ function ContactSection() {
               </form>
             </div>
 
-            <div className="absolute -right-4 bottom-0 hidden h-80 w-64 lg:block xl:-right-70">
+            <div className="absolute -left-6 -top-1 hidden h-96 w-72 lg:block xl:-left-72">
               <Image
                 src={contactImage}
                 alt="Contact"
                 fill
-                className="object-contain object-right-bottom"
+                className="object-contain object-left-top"
               />
             </div>
           </div>
         </div>
-      </div>
     </section>
   );
 }

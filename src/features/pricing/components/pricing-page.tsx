@@ -9,18 +9,6 @@ import { PricingHero } from "./pricing-hero";
 
 const plans = [
   {
-    name: "Basic Plan",
-    description: "Low cost & affordable services to get you started very soon.",
-    price: "Free",
-    priceLabel: "",
-    features: [
-      { text: "Increase traffic 130%", included: true },
-      { text: "Organic traffic 215%", included: true },
-      { text: "10 Free Optimization", included: false },
-    ],
-    highlighted: false,
-  },
-  {
     name: "Premium Plan",
     description: "Increased processing power with multiple sites, storage.",
     price: "29",
@@ -64,7 +52,7 @@ function PricingPlansSection() {
   return (
     <section className="bg-white py-16 sm:py-20 lg:py-24">
       <div className="mx-auto w-full max-w-[1200px] px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 items-start gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 items-stretch gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {plans.map((plan) => (
             <div
               key={plan.name}
