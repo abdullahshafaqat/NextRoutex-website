@@ -1,3 +1,5 @@
+import { SiteHeader } from "@/components/layout/site-header";
+
 import { HomeHero } from "@/features/home/components/home-hero";
 import { HomeConsultingSection } from "@/features/home/components/home-consulting-section";
 import { HomeCtaSection } from "@/features/home/components/home-cta-section";
@@ -13,6 +15,7 @@ import { HomeTestimonialSection } from "@/features/home/components/home-testimon
 export function HomePage() {
   return (
     <>
+      <SiteHeader />
       <HomeHero />
       <HomeConsultingSection />
       <HomeServicesSection />

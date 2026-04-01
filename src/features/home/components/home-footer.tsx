@@ -50,7 +50,7 @@ export function HomeFooter() {
         />
       </div>
       
-      <div className="absolute bottom-24 left-4 w-10 h-10 opacity-40" style={{ animation: 'spin 8s linear infinite' }}>
+      <div className="absolute bottom-24 left-4 w-10 h-10 opacity-40 animate-spin" style={{ animationDuration: '8s' }}>
         <Image
           src={fan}
           alt=""
@@ -174,25 +174,25 @@ export function HomeFooter() {
             <div className="mt-6 flex items-center gap-3">
               <a
                 href="#"
-                className="flex h-10 w-10 items-center justify-center bg-gray-700 text-white hover:bg-[#0d7377] transition-colors"
+                className="flex h-10 w-10 items-center justify-center rounded-lg bg-gray-700 text-white transition-colors hover:bg-[#0d7377]"
               >
                 <FacebookIcon />
               </a>
               <a
                 href="#"
-                className="flex h-10 w-10 items-center justify-center bg-gray-700 text-white hover:bg-[#0d7377] transition-colors"
+                className="flex h-10 w-10 items-center justify-center rounded-lg bg-gray-700 text-white transition-colors hover:bg-[#0d7377]"
               >
                 <TwitterIcon />
               </a>
               <a
                 href="#"
-                className="flex h-10 w-10 items-center justify-center bg-gray-700 text-white hover:bg-[#0d7377] transition-colors"
+                className="flex h-10 w-10 items-center justify-center rounded-lg bg-gray-700 text-white transition-colors hover:bg-[#0d7377]"
               >
                 <PinterestIcon />
               </a>
               <a
                 href="#"
-                className="flex h-10 w-10 items-center justify-center bg-gray-700 text-white hover:bg-[#0d7377] transition-colors"
+                className="flex h-10 w-10 items-center justify-center rounded-lg bg-gray-700 text-white transition-colors hover:bg-[#0d7377]"
               >
                 <LinkedInIcon />
               </a>

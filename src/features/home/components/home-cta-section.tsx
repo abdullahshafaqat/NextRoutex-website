@@ -41,7 +41,7 @@ export function HomeCtaSection() {
           sizes="100vw"
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-[#b91c1c]/85" />
+        <div className="absolute inset-0 bg-[#0d7377]/35" />
 
         <div className="relative z-10 mx-auto flex h-full w-full max-w-[1200px] items-center px-4 sm:px-6 lg:px-8">
           <div className="grid w-full grid-cols-1 items-center gap-8 lg:grid-cols-2">
@@ -51,7 +51,7 @@ export function HomeCtaSection() {
                 <br />
                 Business Consultant?
               </h2>
-              <button className="mt-8 rounded-full border-2 border-white bg-transparent px-8 py-3 text-sm font-semibold text-white transition-all duration-300 hover:bg-[#187d76] hover:border-[#187d76]">
+              <button className="mt-8 rounded-full border-2 border-white bg-white px-8 py-3 text-s font-semibold text-black transition-all duration-300 hover:bg-transparent hover:text-white">
                 Request A Call Back
               </button>
             </div>

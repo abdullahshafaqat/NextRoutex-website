@@ -34,8 +34,6 @@ const slides: Slide[] = [
   },
 ];
 
-const navItems = ["Home", "About Us", "Pricing & Plans", "Service", "Blogs", "Contacts"];
-
 export function HomeHero() {
   const [activeIndex, setActiveIndex] = useState(0);
 
@@ -50,35 +48,7 @@ export function HomeHero() {
   const activeSlide = slides[activeIndex];
 
   return (
-    <section className="flex min-h-screen flex-col bg-[#f7f7f7]">
-      <header className="relative z-20 bg-white">
-        <div className="site-container flex w-full items-center justify-between gap-8 py-4">
-          <Link href="/" className="relative block h-10 w-47.5">
-            <Image
-              src={fullLogo}
-              alt="NextRouteX logo"
-              fill
-              sizes="190px"
-              className="object-contain"
-              priority
-            />
-          </Link>
-
-          <nav className="hidden items-center gap-7 text-[17px] font-semibold text-[#3a3a3a] lg:flex">
-            {navItems.map((item) => (
-              <a key={item} href="#" className="inline-flex items-center transition-colors hover:text-[#187d76]">
-                <span>{item}</span>
-              </a>
-            ))}
-          </nav>
-
-          <button className="rounded-md bg-[#187d76] px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#187d76] sm:px-8 sm:text-base">
-            Get Consultant
-          </button>
-        </div>
-      </header>
-
-      <div className="relative isolate flex-1 overflow-hidden">
+    <section className="relative isolate flex-1 overflow-hidden min-h-[calc(100vh-80px)]">
         {slides.map((slide, index) => (
           <Image
             key={slide.id}
@@ -137,7 +107,6 @@ export function HomeHero() {
             />
           ))}
         </div>
-      </div>
     </section>
   );
 }
