@@ -85,6 +85,8 @@ function LinkedInIcon() {
 }
 
 export function HomeTeamSection() {
+  return null; // TEAM MEMBERS SECTION - HIDDEN
+  /*
   return (
     <section className="relative overflow-hidden bg-[#f9f9f9] py-20 sm:py-24 lg:py-28">
       <BackgroundDecoration />
@@ -133,4 +135,5 @@ export function HomeTeamSection() {
       </div>
     </section>
   );
+  */
 }

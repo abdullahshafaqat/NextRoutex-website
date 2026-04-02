@@ -51,7 +51,7 @@ export function HomeCtaSection() {
                 <br />
                 Business Consultant?
               </h2>
-              <button className="mt-8 rounded-full border-2 border-white bg-white px-8 py-3 text-s font-semibold text-black transition-all duration-300 hover:bg-transparent hover:text-white">
+              <button className="mt-8 rounded-full border-2 border-transparent bg-[#0d7377] px-8 py-3 text-sm font-semibold text-white transition-all duration-300 hover:border-white hover:bg-transparent">
                 Request A Call Back
               </button>
             </div>

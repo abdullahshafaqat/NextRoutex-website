@@ -98,7 +98,7 @@ function PricingPlansSection() {
                 ))}
               </ul>
 
-              <button className="w-full rounded-md bg-[#1a1d29] py-3 text-center text-sm font-semibold text-white transition-colors duration-300 group-hover:bg-[#0d7377]">
+              <button className="w-full rounded-md bg-[#0d7377] py-3 text-center text-sm font-semibold text-white">
                 Purchase Plan
               </button>
             </div>

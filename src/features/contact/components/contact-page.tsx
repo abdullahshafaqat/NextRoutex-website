@@ -12,47 +12,14 @@ import { ContactHero } from "./contact-hero";
 function ContactSection() {
   return (
     <section className="bg-white py-16 font-sans sm:py-20 lg:py-24">
-      <div className="mx-auto w-full max-w-[800px] px-4 sm:px-6 lg:px-8">
-        <div className="relative">
-            <div className="rounded-2xl bg-white p-8 shadow-xl">
-              <p className="text-xs font-bold uppercase tracking-wide text-[#0d7377]">HAVE QUESTIONS?</p>
-              <h3 className="mt-2 text-2xl font-bold text-[#1a1d29]">Send us a Message</h3>
-
-              <form className="mt-6 space-y-4">
-                <input
-                  type="text"
-                  placeholder="Name"
-                  className="w-full rounded-lg border border-gray-200 bg-gray-50 px-4 py-3 text-sm text-gray-700 outline-none transition-all placeholder:text-gray-400 focus:border-[#0d7377] focus:bg-white focus:ring-2 focus:ring-[#0d7377]/20"
-                />
-                <div className="grid grid-cols-2 gap-4">
-                  <input
-                    type="email"
-                    placeholder="Email*"
-                    className="w-full rounded-lg border border-gray-200 bg-gray-50 px-4 py-3 text-sm text-gray-700 outline-none transition-all placeholder:text-gray-400 focus:border-[#0d7377] focus:bg-white focus:ring-2 focus:ring-[#0d7377]/20"
-                  />
-                  <input
-                    type="tel"
-                    placeholder="Phone"
-                    className="w-full rounded-lg border border-gray-200 bg-gray-50 px-4 py-3 text-sm text-gray-700 outline-none transition-all placeholder:text-gray-400 focus:border-[#0d7377] focus:bg-white focus:ring-2 focus:ring-[#0d7377]/20"
-                  />
-                </div>
-                <textarea
-                  placeholder="Tell Us About Project *"
-                  rows={4}
-                  className="w-full resize-none rounded-lg border border-gray-200 bg-gray-50 px-4 py-3 text-sm text-gray-700 outline-none transition-all placeholder:text-gray-400 focus:border-[#0d7377] focus:bg-white focus:ring-2 focus:ring-[#0d7377]/20"
-                />
-
-                <button
-                  type="submit"
-                  className="mt-4 inline-flex items-center gap-2 rounded-md bg-[#0d7377] px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#0a5c5e] cursor-pointer"
-                >
-                  <Send size={16} />
-                  Get In Touch
-                </button>
-              </form>
-            </div>
-
-            <div className="absolute -left-6 -top-1 hidden h-96 w-72 lg:block xl:-left-72">
+      <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 gap-12 lg:grid-cols-2">
+          <div className="flex flex-col justify-start">
+            <p className="text-xl font-bold uppercase tracking-widest text-[#0d7377]">Contact Us</p>
+            <h2 className="mt-2 text-4xl font-bold text-[#1a1d29]">Let's Discuss Your Project</h2>
+            <p className="mt-3 text-gray-500 max-w-md">Ready to take your business to the next level? Fill out the form below and our team will reach out to you shortly.</p>
+            
+            <div className="relative mt-8 h-[330px] w-[300px]">
               <Image
                 src={contactImage}
                 alt="Contact"
@@ -61,7 +28,45 @@ function ContactSection() {
               />
             </div>
           </div>
+
+          <div>
+            <form className="space-y-4">
+              <div className="group relative">
+                <input
+                  type="text"
+                  placeholder="Full Name"
+                  className="w-full border border-gray-200 bg-gray-50/50 px-4 py-3.5 text-base text-gray-700 outline-none transition-all placeholder:text-gray-400 focus:border-[#0d7377] focus:bg-white focus:shadow-lg focus:shadow-[#0d7377]/10"
+                />
+              </div>
+              <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                <input
+                  type="email"
+                  placeholder="Email Address *"
+                  className="w-full border border-gray-200 bg-gray-50/50 px-4 py-3.5 text-base text-gray-700 outline-none transition-all placeholder:text-gray-400 focus:border-[#0d7377] focus:bg-white focus:shadow-lg focus:shadow-[#0d7377]/10"
+                />
+                <input
+                  type="tel"
+                  placeholder="Phone Number"
+                  className="w-full border border-gray-200 bg-gray-50/50 px-4 py-3.5 text-base text-gray-700 outline-none transition-all placeholder:text-gray-400 focus:border-[#0d7377] focus:bg-white focus:shadow-lg focus:shadow-[#0d7377]/10"
+                />
+              </div>
+              <textarea
+                placeholder="Your Message *"
+                rows={3}
+                className="w-full resize-none border border-gray-200 bg-gray-50/50 px-4 py-3.5 text-base text-gray-700 outline-none transition-all placeholder:text-gray-400 focus:border-[#0d7377] focus:bg-white focus:shadow-lg focus:shadow-[#0d7377]/10"
+              />
+
+              <button
+                type="submit"
+                className="w-full bg-[#0d7377] px-6 py-4 text-base font-bold text-white transition-all hover:bg-[#0a5c5e] hover:shadow-lg hover:shadow-[#0d7377]/30 flex items-center justify-center gap-2"
+              >
+                <Send className="h-5 w-5" />
+                Send Message
+              </button>
+            </form>
+          </div>
         </div>
+      </div>
     </section>
   );
 }

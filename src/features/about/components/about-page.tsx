@@ -128,6 +128,7 @@ export function AboutPage() {
         </div>
       </section>
       
+      {/* TEAM MEMBERS SECTION - HIDDEN
       <section className="relative overflow-hidden bg-[#f9f9f9] py-20 sm:py-24 lg:py-28">
         <BackgroundDecoration />
 
@@ -174,6 +175,7 @@ export function AboutPage() {
           </div>
         </div>
       </section>
+      */}
       
       <HomeFooter />
     </>
