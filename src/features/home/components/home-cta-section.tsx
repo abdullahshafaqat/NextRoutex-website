@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 
-import ctaImage from "@/assets/hero-slide-2.jpg";
+import ctaImage from "@/assets/hero-slide-3.jpg";
 
 function AwardIcon() {
   return (

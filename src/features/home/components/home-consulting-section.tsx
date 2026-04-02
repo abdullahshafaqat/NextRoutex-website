@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
-import sidePhoto from "@/assets/consulting-photo.webp";
+import sidePhoto from "@/assets/consulting-photo.jpg";
 import decorGeom from "@/assets/consulting-decoration.png";
 import signature from "@/assets/signature.webp";
 

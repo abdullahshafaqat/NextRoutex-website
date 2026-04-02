@@ -4,7 +4,7 @@ import Image, { type StaticImageData } from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-import slideOne from "@/assets/hero-slide-1.png";
+import slideOne from "@/assets/hero-slide-1.jpg";
 import slideTwo from "@/assets/hero-slide-2.jpg";
 import accentShape from "@/assets/hero-accent.png";
 import fullLogo from "@/assets/full-logo.png";
@@ -65,7 +65,7 @@ export function HomeHero() {
 
         <div className="absolute inset-0 bg-[#0e1724]/55" />
 
-        <div className="pointer-events-none absolute inset-y-0 right-0 w-full max-w-225 opacity-14">
+        <div className="pointer-events-none absolute inset-y-0 right-0 w-full max-w-225 opacity-35">
           <Image
             src={accentShape}
             alt="Decorative shape"
