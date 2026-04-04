@@ -41,7 +41,7 @@ export function SiteHeader() {
         </nav>
 
         <button className="rounded-md bg-[#0d7377] px-5 py-2 text-sm font-semibold text-white transition-colors hover:bg-[#0a5c5e]">
-          Get Consultant
+          Request Demo
         </button>
       </div>
     </header>

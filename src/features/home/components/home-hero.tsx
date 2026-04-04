@@ -4,8 +4,8 @@ import Image, { type StaticImageData } from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-import slideOne from "@/assets/hero-slide-1.jpg";
-import slideTwo from "@/assets/hero-slide-2.jpg";
+import slideOne from "@/assets/hero-trucking-hd-v2.jpg";
+import slideTwo from "@/assets/hero-trucking-road-hd.jpg";
 import accentShape from "@/assets/hero-accent.png";
 import fullLogo from "@/assets/full-logo.png";
 
@@ -15,6 +15,7 @@ type Slide = {
   title: string;
   cta: string;
   image: StaticImageData;
+  objectPosition?: string;
 };
 
 const slides: Slide[] = [
@@ -24,6 +25,7 @@ const slides: Slide[] = [
     title: "Financial Analysis\nDeveloping Meeting.",
     cta: "Our Services",
     image: slideOne,
+    objectPosition: "center bottom",
   },
   {
     id: 2,
@@ -31,6 +33,7 @@ const slides: Slide[] = [
     title: "Strategies for\nEnduring Success",
     cta: "Our Services",
     image: slideTwo,
+    objectPosition: "center center",
   },
 ];
 
@@ -57,6 +60,7 @@ export function HomeHero() {
             fill
             sizes="100vw"
             priority={index === 0}
+            style={{ objectPosition: slide.objectPosition ?? "center center" }}
             className={`object-cover object-center transition-opacity duration-700 ${
               index === activeIndex ? "opacity-100" : "opacity-0"
             }`}
