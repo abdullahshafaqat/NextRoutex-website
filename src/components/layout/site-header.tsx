@@ -16,7 +16,7 @@ const navItems = [
 export function SiteHeader() {
   return (
     <header className="relative z-20 bg-white">
-      <div className="mx-auto flex h-20 w-full max-w-[1200px] items-center justify-between px-4 sm:px-6 lg:px-8">
+      <div className="site-container flex h-20 items-center justify-between">
         <Link href="/" className="relative flex h-10 w-40 items-center">
           <Image
             src={fullLogo}

@@ -94,7 +94,7 @@ export function AboutPage() {
       <AboutHero />
       
       <section className="bg-white py-16 lg:py-24">
-        <div className="mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8">
+        <div className="site-container">
           <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
             <div>
               <p className="text-xl font-bold uppercase tracking-wide text-[#0d7377]">

@@ -43,7 +43,7 @@ export function HomeCtaSection() {
         />
         <div className="absolute inset-0 bg-[#0d7377]/35" />
 
-        <div className="relative z-10 mx-auto flex h-full w-full max-w-[1200px] items-center px-4 sm:px-6 lg:px-8">
+        <div className="site-container relative z-10 flex h-full items-center">
           <div className="grid w-full grid-cols-1 items-center gap-8 lg:grid-cols-2">
             <div>
               <h2 className="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-[42px]">

@@ -61,7 +61,7 @@ export function HomeServicesSection() {
     <section className="relative bg-[#f3f3f3] py-16 sm:py-20 lg:py-24">
       <Image src={leftDecor} alt="" className="pointer-events-none absolute -left-1 -top-24 h-auto w-48" />
 
-      <div className="site-container relative ml-10 grid w-full grid-cols-1 gap-10 lg:grid-cols-[450px_1fr] lg:items-stretch lg:gap-10">
+      <div className="site-container relative grid w-full grid-cols-1 gap-10 lg:grid-cols-[450px_1fr] lg:items-stretch lg:gap-10">
         <div className="relative h-full">
           <div className="absolute inset-x-4 -bottom-3 top-4 rounded-2xl bg-[#e7e7e7]" />
           <div className="relative flex h-full flex-col rounded-xl bg-white px-6 py-7 shadow-[0_10px_30px_rgba(0,0,0,0.06)]">

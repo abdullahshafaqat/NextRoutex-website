@@ -3,6 +3,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --site-container-max: 1200px;
+  --site-container-padding: clamp(16px, 2vw, 24px);
 }
 
 @theme inline {
@@ -27,7 +29,7 @@ body {
 
 .site-container {
   width: min(
-    var(--site-container-max, 1520px),
+    var(--site-container-max, 1200px),
     calc(100% - (var(--site-container-padding, clamp(16px, 2vw, 24px)) * 2))
   );
   margin-inline: auto;

@@ -46,7 +46,7 @@ export function HomeProcessSection() {
         className="pointer-events-none absolute right-0 top-1/2 h-auto w-72 -translate-y-1/2 object-contain"
       />
 
-      <div className="relative mx-auto w-full max-w-[1080px] px-4 sm:px-6 lg:px-8">
+      <div className="site-container relative">
         <div className="mx-auto max-w-[480px] text-center">
           <p className="text-sm font-bold uppercase tracking-[0.14em] text-[#187d76] sm:text-[15px]">
             OUR PROCESS

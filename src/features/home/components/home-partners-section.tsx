@@ -36,7 +36,7 @@ function WorldMap() {
 export function HomePartnersSection() {
   return (
     <section className="relative overflow-hidden bg-white py-16 sm:py-20 lg:py-24">
-      <div className="mx-auto w-full max-w-[1200px] px-4 sm:px-6 lg:px-8">
+      <div className="site-container">
         <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-16">
           <div className="relative h-96 w-full">
             <WorldMap />

@@ -54,7 +54,7 @@ export function HomeProjectsSection() {
   return (
     <section className="relative overflow-hidden bg-white">
       <div className="bg-[#1a1d29] py-16 sm:py-20 lg:py-24">
-        <div className="mx-auto w-full max-w-[1200px] px-4 sm:px-6 lg:px-8">
+        <div className="site-container">
           <div className="flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-end">
             <div>
               <p className="text-sm font-bold uppercase tracking-wide text-[#0d7377]">
@@ -88,7 +88,7 @@ export function HomeProjectsSection() {
         </div>
       </div>
 
-      <div className="mx-auto w-full max-w-[1200px] bg-white px-4 pb-16 sm:px-6 sm:pb-20 lg:px-8 lg:pb-24">
+      <div className="site-container bg-white pb-16 sm:pb-20 lg:pb-24">
         <div className="relative -mt-12 grid grid-cols-1 gap-0 lg:grid-cols-2 lg:-mt-20">
           <div className="relative aspect-[4/3] overflow-hidden bg-gray-200">
             <Image

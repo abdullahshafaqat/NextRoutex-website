@@ -51,7 +51,7 @@ const plans = [
 function PricingPlansSection() {
   return (
     <section className="bg-white py-16 sm:py-20 lg:py-24">
-      <div className="mx-auto w-full max-w-[1200px] px-4 sm:px-6 lg:px-8">
+      <div className="site-container">
         <div className="grid grid-cols-1 items-stretch gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {plans.map((plan) => (
             <div

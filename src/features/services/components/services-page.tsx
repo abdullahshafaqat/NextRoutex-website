@@ -66,7 +66,7 @@ function ServicesSection() {
 
   return (
     <section className="relative bg-[#f9f9f9] py-16 sm:py-20 lg:py-24">
-      <div className="relative mx-auto w-full max-w-[1200px] px-4 sm:px-6 lg:px-8">
+      <div className="site-container relative">
         <div className="text-center">
           <p className="text-xl font-bold uppercase tracking-wide text-[#0d7377]">
             WHAT WE DO
@@ -185,7 +185,7 @@ function ServicesSection() {
 function TestimonialSection() {
   return (
     <section className="relative overflow-hidden bg-white py-16 sm:py-20 lg:py-24">
-      <div className="mx-auto w-full max-w-[1200px] px-4 sm:px-6 lg:px-8">
+      <div className="site-container">
         <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
           <div className="relative flex justify-center lg:justify-start">
             <div className="relative">

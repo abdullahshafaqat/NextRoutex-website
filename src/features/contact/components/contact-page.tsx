@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { Mail, MapPin, Phone, Send } from "lucide-react";
+import { Send } from "lucide-react";
 
 import contactImage from "@/assets/contact1.png";
 import { SiteHeader } from "@/components/layout/site-header";
@@ -12,11 +12,11 @@ import { ContactHero } from "./contact-hero";
 function ContactSection() {
   return (
     <section className="bg-white py-16 font-sans sm:py-20 lg:py-24">
-      <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="site-container">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-2">
           <div className="flex flex-col justify-start">
             <p className="text-xl font-bold uppercase tracking-widest text-[#0d7377]">Contact Us</p>
-            <h2 className="mt-2 text-4xl font-bold text-[#1a1d29]">Let's Discuss Your Project</h2>
+            <h2 className="mt-2 text-4xl font-bold text-[#1a1d29]">Let&apos;s Discuss Your Project</h2>
             <p className="mt-3 text-gray-500 max-w-md">Ready to take your business to the next level? Fill out the form below and our team will reach out to you shortly.</p>
             
             <div className="relative mt-8 h-[330px] w-[300px]">

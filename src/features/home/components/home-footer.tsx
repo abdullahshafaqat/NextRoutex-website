@@ -59,7 +59,7 @@ export function HomeFooter() {
         />
       </div>
       
-      <div className="relative mx-auto w-full max-w-[1200px] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
+      <div className="site-container relative py-16 sm:py-20 lg:py-24">
         <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4">
           <div className="lg:col-span-1">
             <div className="flex items-center gap-2">
@@ -202,7 +202,7 @@ export function HomeFooter() {
       </div>
 
       <div className="border-t border-gray-800">
-        <div className="mx-auto w-full max-w-[1200px] px-4 py-6 sm:px-6 lg:px-8">
+        <div className="site-container py-6">
           <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
             <p className="text-sm text-gray-500">
               © Copyright 2025. All Rights Reserved by <span className="text-white font-semibold">validthemes</span>
