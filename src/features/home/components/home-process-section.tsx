@@ -62,12 +62,12 @@ export function HomeProcessSection() {
         <div className="mt-10 grid w-full grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3 lg:gap-12">
           {processSteps.map((step, index) => (
             <article key={step.id} className="text-center">
-              <div className="group relative mx-auto h-[190px] w-[190px] overflow-hidden rounded-full">
+              <div className="group relative mx-auto h-[230px] w-[230px] overflow-hidden rounded-full sm:h-[245px] sm:w-[245px] lg:h-[260px] lg:w-[260px]">
                 <Image
                   src={step.image}
                   alt={step.title}
                   fill
-                  sizes="190px"
+                  sizes="(max-width: 640px) 230px, (max-width: 1024px) 245px, 260px"
                   className="object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <Image
@@ -82,7 +82,7 @@ export function HomeProcessSection() {
                     className="pointer-events-none absolute -bottom-3 -left-2 h-auto w-24"
                   />
                 ) : null}
-                <span className="pointer-events-none absolute bottom-2 left-4 text-[60px] font-normal leading-none text-white/90 transition-opacity duration-300 group-hover:opacity-0">
+                <span className="pointer-events-none absolute bottom-2 left-4 text-[72px] font-normal leading-none text-white/90 transition-opacity duration-300 group-hover:opacity-0 sm:text-[78px]">
                   {step.id}
                 </span>
               </div>

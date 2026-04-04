@@ -11,7 +11,7 @@ import { ContactHero } from "./contact-hero";
 
 function ContactSection() {
   return (
-    <section className="bg-white py-16 font-sans sm:py-20 lg:py-24">
+    <section className="bg-white py-12 font-sans sm:py-14 lg:py-16">
       <div className="site-container">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-2">
           <div className="flex flex-col justify-start">
@@ -19,7 +19,7 @@ function ContactSection() {
             <h2 className="mt-2 text-4xl font-bold text-[#1a1d29]">Let&apos;s Discuss Your Project</h2>
             <p className="mt-3 text-gray-500 max-w-md">Ready to take your business to the next level? Fill out the form below and our team will reach out to you shortly.</p>
             
-            <div className="relative mt-8 h-[330px] w-[300px]">
+            <div className="relative mt-6 h-[190px] w-[220px]">
               <Image
                 src={contactImage}
                 alt="Contact"

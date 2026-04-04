@@ -3,8 +3,8 @@
 import Image from "next/image";
 import { useState } from "react";
 
-import projectImage1 from "@/assets/project-1.jpg";
-import projectImage2 from "@/assets/project-2.webp";
+import projectImage1 from "@/assets/project-tms-reporting.png";
+import projectImage2 from "@/assets/project-tms-loadboard.png";
 
 const projects = [
   {

@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import pricePlanBg from "@/assets/price-plan.jpg";
+import pricePlanBg from "@/assets/pricing-hero-bg.jpg";
 import truckImage from "@/assets/about-us1.png";
 
 function HomeIcon() {

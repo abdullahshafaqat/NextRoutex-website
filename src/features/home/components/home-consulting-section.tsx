@@ -3,9 +3,8 @@
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
-import sidePhoto from "@/assets/consulting-photo.jpg";
+import sidePhoto from "@/assets/services.png";
 import decorGeom from "@/assets/consulting-decoration.png";
-import signature from "@/assets/signature.webp";
 
 const LOGO_GREEN = "#187d76";
 
@@ -34,7 +33,7 @@ function GlobeIcon() {
 export function HomeConsultingSection() {
   const sectionRef = useRef<HTMLElement | null>(null);
   const frameRef = useRef<number>(0);
-  const wasInViewRef = useRef(false);
+  const hasAnimatedRef = useRef(false);
   const [hasUserScrolled, setHasUserScrolled] = useState(false);
   const [successCount, setSuccessCount] = useState(0);
   const [clientCount, setClientCount] = useState(0);
@@ -52,11 +51,6 @@ export function HomeConsultingSection() {
     const sectionNode = sectionRef.current;
     if (!sectionNode) return;
 
-    const resetCounts = () => {
-      setSuccessCount(0);
-      setClientCount(0);
-    };
-
     const animateCounts = () => {
       const duration = 1250;
       const start = performance.now();
@@ -69,15 +63,21 @@ export function HomeConsultingSection() {
 
         if (progress < 1) {
           frameRef.current = requestAnimationFrame(tick);
+          return;
         }
+
+        setSuccessCount(98);
+        setClientCount(120);
       };
 
       frameRef.current = requestAnimationFrame(tick);
     };
 
     const startAnimation = () => {
+      if (hasAnimatedRef.current) return;
+
+      hasAnimatedRef.current = true;
       cancelAnimationFrame(frameRef.current);
-      resetCounts();
       animateCounts();
     };
 
@@ -85,19 +85,8 @@ export function HomeConsultingSection() {
       (entries) => {
         const entry = entries[0];
         if (!entry) return;
-        if (!hasUserScrolled) return;
-
-        if (entry.isIntersecting && !wasInViewRef.current) {
-          wasInViewRef.current = true;
-          startAnimation();
-          return;
-        }
-
-        if (!entry.isIntersecting && wasInViewRef.current) {
-          wasInViewRef.current = false;
-          cancelAnimationFrame(frameRef.current);
-          resetCounts();
-        }
+        if (!hasUserScrolled || hasAnimatedRef.current) return;
+        if (entry.isIntersecting) startAnimation();
       },
       { threshold: 0.35 }
     );
@@ -108,8 +97,7 @@ export function HomeConsultingSection() {
       const rect = sectionNode.getBoundingClientRect();
       const isVisible = rect.top < window.innerHeight * 0.85 && rect.bottom > window.innerHeight * 0.15;
 
-      if (isVisible && !wasInViewRef.current) {
-        wasInViewRef.current = true;
+      if (isVisible && !hasAnimatedRef.current) {
         startAnimation();
       }
     }
@@ -155,10 +143,10 @@ export function HomeConsultingSection() {
           <div className="relative ml-auto" style={{ width: 420, height: 520 }}>
             <Image
               src={sidePhoto}
-              alt="Consulting professional"
+              alt="Trucking management system dashboard"
               fill
               sizes="(max-width: 1024px) 85vw, 420px"
-              className="object-cover"
+              className="object-cover object-center"
             />
           </div>
 

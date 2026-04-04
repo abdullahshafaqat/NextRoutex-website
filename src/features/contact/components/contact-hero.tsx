@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import contactBg from "@/assets/contact.jpg";
+import contactBg from "@/assets/contact-hero-bg.jpg";
 import truckImage from "@/assets/about-us1.png";
 
 function HomeIcon() {

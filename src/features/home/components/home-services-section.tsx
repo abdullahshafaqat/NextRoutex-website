@@ -63,8 +63,8 @@ export function HomeServicesSection() {
 
       <div className="site-container relative grid w-full grid-cols-1 gap-10 lg:grid-cols-[450px_1fr] lg:items-stretch lg:gap-10">
         <div className="relative h-full">
-          <div className="absolute inset-x-4 -bottom-3 top-4 rounded-2xl bg-[#e7e7e7]" />
-          <div className="relative flex h-full flex-col rounded-xl bg-white px-6 py-7 shadow-[0_10px_30px_rgba(0,0,0,0.06)]">
+          <div className="absolute inset-x-4 -bottom-3 top-4 rounded-[5px] bg-[#e7e7e7]" />
+          <div className="relative flex h-full flex-col rounded-[5px] bg-white px-6 py-7 shadow-[0_10px_30px_rgba(0,0,0,0.06)]">
             <p className="text-2xl font-bold uppercase tracking-wider text-[#187d76]">WHAT WE DO</p>
             <h3 className="mt-4 text-[40px] font-semibold leading-[1.15] text-[#1a1f28]">
               Excellent service and
@@ -151,15 +151,20 @@ export function HomeServicesSection() {
           </div>
         </div>
 
-        <div className="grid h-full grid-cols-1 gap-x-12 gap-y-8 sm:grid-cols-2">
+        <div className="grid h-full grid-cols-1 gap-6 sm:grid-cols-2">
           {featureItems.map((item) => {
             const Icon = item.icon;
 
             return (
-              <article key={item.title}>
-                <Icon size={40} color={LOGO_GREEN} strokeWidth={1.5} aria-hidden={true} />
-                <h4 className="mt-4 text-[18px] font-semibold text-[#181d28]">{item.title}</h4>
-                <p className="mt-2 line-clamp-3 text-[13px] leading-5 text-[#5f6573]">{item.description}</p>
+              <article
+                key={item.title}
+                className="flex h-full flex-col rounded-[5px] border border-[#dfe3e8] bg-white px-5 py-4 shadow-[0_12px_30px_rgba(15,23,42,0.05)]"
+              >
+                <div className="inline-flex h-11 w-11 items-center justify-center rounded-[18px] bg-[#eef8f6]">
+                  <Icon size={28} color={LOGO_GREEN} strokeWidth={1.7} aria-hidden={true} />
+                </div>
+                <h4 className="mt-3 text-[18px] font-semibold leading-tight text-[#181d28]">{item.title}</h4>
+                <p className="mt-2 line-clamp-3 text-[14px] leading-6 text-[#5f6573]">{item.description}</p>
               </article>
             );
           })}

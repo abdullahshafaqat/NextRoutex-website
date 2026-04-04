@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 
-import fan from "@/assets/fan.png";
 import footerBg from "@/assets/footer.png";
 import logo from "@/assets/logo.png";
 
@@ -50,15 +49,6 @@ export function HomeFooter() {
         />
       </div>
       
-      <div className="absolute bottom-24 left-4 w-10 h-10 opacity-40 animate-spin" style={{ animationDuration: '8s' }}>
-        <Image
-          src={fan}
-          alt=""
-          fill
-          className="object-contain"
-        />
-      </div>
-      
       <div className="site-container relative py-16 sm:py-20 lg:py-24">
         <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4">
           <div className="lg:col-span-1">
@@ -75,23 +65,6 @@ export function HomeFooter() {
             <p className="mt-4 text-lg leading-relaxed text-gray-400 font-medium">
               Excellence decisively nay man twins impression maximum contrasted remarkably is perfect.
             </p>
-            <div className="mt-6">
-              <h4 className="text-lg font-bold uppercase tracking-wide text-white">
-                OPENING HOURS
-              </h4>
-              <div className="mt-4 space-y-2 text-lg text-gray-400 font-medium">
-                <div className="flex items-center justify-between">
-                  <span>Monday - Sunday:</span>
-                  <span className="flex-1 border-b border-gray-600 mx-2" />
-                  <span>2PM - 2PM</span>
-                </div>
-                <div className="flex items-center justify-between">
-                  <span>Sunday:</span>
-                  <span className="flex-1 border-b border-gray-600 mx-2" />
-                  <span>OFF DAY</span>
-                </div>
-              </div>
-            </div>
           </div>
 
           <div>
@@ -205,7 +178,7 @@ export function HomeFooter() {
         <div className="site-container py-6">
           <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
             <p className="text-sm text-gray-500">
-              © Copyright 2025. All Rights Reserved by <span className="text-white font-semibold">validthemes</span>
+              © Copyright 2026. All Rights Reserved by <span className="text-white font-semibold">NextRouteX</span>
             </p>
             <div className="flex items-center gap-6">
               <a href="#" className="text-sm text-gray-500 hover:text-white transition-colors">

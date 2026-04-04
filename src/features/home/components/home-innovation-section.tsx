@@ -2,7 +2,8 @@
 
 import Image from "next/image";
 
-import mainImage from "@/assets/innovation-main.jpg";
+import dashboardImage from "@/assets/innovation-trucking-software.png";
+import truckingImage from "@/assets/hero-trucking-road-hd.jpg";
 
 const features = [
   {
@@ -45,16 +46,31 @@ export function HomeInnovationSection() {
             style={{ clipPath: "polygon(15% 0, 100% 0, 100% 100%, 0% 100%)" }}
           >
             <Image
-              src={mainImage}
-              alt="Business consulting"
+              src={truckingImage}
+              alt="Truck on the highway"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
-              className="object-cover"
+              className="object-cover object-[72%_center]"
             />
+            <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(10,15,27,0.72)_0%,rgba(10,15,27,0.2)_45%,rgba(10,15,27,0.05)_100%)]" />
           </div>
+
+          <div className="absolute bottom-8 left-[22%] right-6 z-10 sm:bottom-10 sm:left-[24%] lg:left-[18%]">
+            <div className="relative ml-auto w-full max-w-[430px] overflow-hidden rounded-[20px] border border-white/15 bg-white shadow-[0_26px_80px_rgba(15,23,42,0.45)]">
+              <Image
+                src={dashboardImage}
+                alt="Trucking software dashboard"
+                width={1400}
+                height={900}
+                sizes="(max-width: 1024px) 80vw, 430px"
+                className="h-auto w-full object-cover object-top"
+              />
+            </div>
+          </div>
+
           <div className="pointer-events-none absolute bottom-6 right-6">
             <span className="text-7xl font-bold tracking-widest text-white/15 sm:text-8xl lg:text-[120px]">
-              CONSULTING
+              TMS ERP
             </span>
           </div>
         </div>
