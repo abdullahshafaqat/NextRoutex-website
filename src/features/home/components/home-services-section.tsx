@@ -10,11 +10,14 @@ import {
   ChevronRight,
   HandCoins,
   Landmark,
-  Megaphone,
-  Network,
+  Lock,
+  Route,
   PiggyBank,
-  SquareDashed,
+  ShieldCheck,
   Store,
+  UserCog,
+  Users,
+  Truck,
 } from "lucide-react";
 
 
@@ -29,27 +32,84 @@ type FeatureItem = {
   icon: React.ComponentType<{ size?: number; color?: string; strokeWidth?: number; "aria-hidden"?: boolean }>;
 };
 
-const featureCopy =
-  "Prevailed always tolerably discourse and loser assurance creatively coin applauded more uncommonly. Him everything trouble settled. Lead supported projection and strategic planning through focused market insight and dependable advisory execution.";
-
 const serviceFeatureMap: Record<ServiceKey, FeatureItem[]> = {
   consulting: [
-    { title: "Investment Planning", description: featureCopy, icon: HandCoins },
-    { title: "Markets Research", description: featureCopy, icon: BarChart3 },
-    { title: "Consultancy & Advice", description: featureCopy, icon: Network },
-    { title: "Business Planning", description: featureCopy, icon: BriefcaseBusiness },
+    {
+      title: "Multi User",
+      description:
+        "Enable secure access for admins and multiple employees with role-based permissions, so each user can only use the modules and data assigned to their job.",
+      icon: Lock,
+    },
+    {
+      title: "Client Management",
+      description:
+        "Store and manage customer profiles with full create, update, and delete flows, giving your team one clean client record for operations.",
+      icon: Users,
+    },
+    {
+      title: "Driver Management",
+      description:
+        "Register drivers, maintain profile details, and track license validity and status to keep dispatch planning accurate and compliant.",
+      icon: UserCog,
+    },
+    {
+      title: "Vehicle Fleet Records",
+      description:
+        "Manage vehicle specifications, availability, and maintenance state in one place so fleet data stays current for daily assignments.",
+      icon: Truck,
+    },
   ],
   marketing: [
-    { title: "Strategy & Planning", description: featureCopy, icon: Briefcase },
-    { title: "Online Business", description: featureCopy, icon: Store },
-    { title: "Saving & Investments", description: featureCopy, icon: PiggyBank },
-    { title: "Markets Research", description: featureCopy, icon: BarChart3 },
+    {
+      title: "Tour & Trip Planning",
+      description:
+        "Create tours, assign drivers and vehicles, and track status from planned to completed, forming the operational core of Logenix.",
+      icon: Route,
+    },
+    {
+      title: "Tour Expense & Deductions",
+      description:
+        "Record expenses, penalties, and deductions against each tour for transparent trip-level costing and faster financial reconciliation.",
+      icon: PiggyBank,
+    },
+    {
+      title: "Tour Damage Tracking",
+      description:
+        "Capture incident and damage records by tour with category and cost details, helping teams document issues and control loss.",
+      icon: ShieldCheck,
+    },
+    {
+      title: "Operations Visibility",
+      description:
+        "View trip progress and key operational data in one workflow so dispatch, accounts, and managers can coordinate decisions quickly.",
+      icon: BriefcaseBusiness,
+    },
   ],
   banking: [
-    { title: "Financial Services", description: featureCopy, icon: Landmark },
-    { title: "Corporate Banking", description: featureCopy, icon: BriefcaseBusiness },
-    { title: "Treasury Management", description: featureCopy, icon: HandCoins },
-    { title: "Risk Assessment", description: featureCopy, icon: BarChart3 },
+    {
+      title: "Vehicle Maintenance",
+      description:
+        "Schedule services and repairs, track maintenance history per vehicle, and monitor costs to reduce downtime across the fleet.",
+      icon: Briefcase,
+    },
+    {
+      title: "Financial Ledger",
+      description:
+        "Maintain ledger entries for income and expenses with detailed records that support accounting, audits, and monthly reporting.",
+      icon: Landmark,
+    },
+    {
+      title: "Service History Reports",
+      description:
+        "Review historical maintenance, trip deductions, and damage trends to improve planning and prevent repeated operational issues.",
+      icon: Store,
+    },
+    {
+      title: "Management Dashboard",
+      description:
+        "Use high-level logistics and finance insights to monitor business health and make data-backed decisions for growth.",
+      icon: BarChart3,
+    },
   ],
 };
 
@@ -67,8 +127,8 @@ export function HomeServicesSection() {
           <div className="relative flex h-full flex-col rounded-[5px] bg-white px-6 py-7 shadow-[0_10px_30px_rgba(0,0,0,0.06)]">
             <p className="text-2xl font-bold uppercase tracking-wider text-[#187d76]">WHAT WE DO</p>
             <h3 className="mt-4 text-[40px] font-semibold leading-[1.15] text-[#1a1f28]">
-              Excellent service and
-              support for you
+              Core services for
+              modern fleet operations
             </h3>
 
             <div className="mt-8 space-y-3">
@@ -87,9 +147,9 @@ export function HomeServicesSection() {
                       activeService === "consulting" ? "border-white/50" : "border-[#aeb4bf]"
                     }`}
                   >
-                    <SquareDashed size={14} strokeWidth={2} aria-hidden="true" />
+                    <Lock size={14} strokeWidth={2} aria-hidden="true" />
                   </span>
-                  <span className="text-[13px]">Consulting services</span>
+                  <span className="text-[13px]">Core management</span>
                 </div>
                 <ChevronRight
                   size={16}
@@ -108,13 +168,13 @@ export function HomeServicesSection() {
                 }`}
               >
                 <div className="flex items-center gap-3">
-                  <Megaphone
+                  <Route
                     size={17}
                     color={activeService === "marketing" ? "#ffffff" : LOGO_GREEN}
                     strokeWidth={2}
                     aria-hidden="true"
                   />
-                  <span>Marketing services</span>
+                  <span>Trips and operations</span>
                 </div>
                 <ChevronRight
                   size={16}
@@ -133,13 +193,13 @@ export function HomeServicesSection() {
                 }`}
               >
                 <div className="flex items-center gap-3">
-                  <Landmark
+                  <HandCoins
                     size={17}
                     color={activeService === "banking" ? "#ffffff" : LOGO_GREEN}
                     strokeWidth={2}
                     aria-hidden="true"
                   />
-                  <span>Banking services</span>
+                  <span>Finance and upkeep</span>
                 </div>
                 <ChevronRight
                   size={16}

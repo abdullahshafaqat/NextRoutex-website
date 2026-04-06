@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 
-import numberEight from "@/assets/process-step-1.webp";
+import numberEight from "@/assets/process-step-1.jpg";
 import numberZero from "@/assets/hero-slide-2.jpg";
 import partnerLogo1 from "@/assets/partner-logo-1.png";
 import partnerLogo2 from "@/assets/partner-logo-2.webp";

@@ -7,14 +7,14 @@ import truckingImage from "@/assets/hero-trucking-road-hd.jpg";
 
 const features = [
   {
-    title: "Best Business Consulting",
+    title: "Real-Time Fleet Visibility",
     description:
-      "Seeing rather her you not esteem men settle genius excuse. International Deal say over you age from. Comparison new ham melancholy son themselves.",
+      "Track vehicles, drivers, and trip status in one live dashboard so operations teams can act faster and avoid delays.",
   },
   {
-    title: "24/7 Customer Support",
+    title: "Reliable Support",
     description:
-      "Tothether rather her you not esteem men settle genius excuse. Deal say over you age from. Comparison new ham melancholy son.",
+      "Get quick help from onboarding to daily operations so your team stays productive and your logistics never stop.",
   },
 ];
 
@@ -25,8 +25,8 @@ export function HomeInnovationSection() {
         <div className="relative px-8 py-20 sm:px-16 sm:py-24 lg:px-20 lg:py-28">
           <div className="relative z-10 ml-16 max-w-[520px]">
             <h2 className="text-4xl font-bold leading-[1.15] text-white sm:text-5xl lg:text-[52px]">
-              Be at the forefront of the
-              new inovation
+              Lead the next era of
+              logistics technology
             </h2>
 
             <div className="mt-12 space-y-10">
